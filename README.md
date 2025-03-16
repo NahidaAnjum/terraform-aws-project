@@ -90,5 +90,10 @@ You should see **"Welcome to Anjum's Website 🚀"** displayed.
 I’m open to suggestions! Feel free to fork, modify, and contribute.
 
 📢 Let's build and learn together! 🚀
-
+Here are few snapshots of my application:
+![vpc](image.png)
+![servers](image-1.png)
+![security groups](image-2.png)
+![Internet Gateway](image-3.png)
+![RESULT](image-4.png)
 
