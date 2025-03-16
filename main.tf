@@ -92,18 +92,19 @@ resource "aws_security_group" "db-sg" {
   name   = "db-sg"
 
   ingress {
-    from_port       = 3306
-    to_port         = 3306
-    protocol        = "tcp"
-    security_groups = [aws_security_group.web-sg.id] # Only allow traffic from Web SG
+    from_port   = 3306
+    to_port     = 3306
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.1.0/24"] # Allow traffic from Public Subnet instead of Web SG
   }
 
   egress {
-    from_port       = 3306
-    to_port         = 3306
-    protocol        = "tcp"
-    security_groups = [aws_security_group.web-sg.id] # Allow DB to communicate only with Web SG
+    from_port   = 3306
+    to_port     = 3306
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.1.0/24"] # Allow DB to communicate only with Web Subnet
   }
+  
   tags = { Name = "DBSG" }
 }
 

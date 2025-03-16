@@ -91,9 +91,9 @@ I’m open to suggestions! Feel free to fork, modify, and contribute.
 
 📢 Let's build and learn together! 🚀
 Here are few snapshots of my application:
-![vpc](image.png)
-![servers](image-1.png)
-![security groups](image-2.png)
-![Internet Gateway](image-3.png)
-![RESULT](image-4.png)
+![vpc](images/image.png)
+![servers](images/image-1.png)
+![security groups](images/image-2.png)
+![Internet Gateway](images/image-3.png)
+![RESULT](images/image-4.png)
 
